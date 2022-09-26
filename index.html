@@ -541,7 +541,7 @@
 
     const smallForegroundImageElements = foregroundImagePaths.map(name => {
         const image = document.createElement('img');
-        const url = `/images/foreground/small/${name}_small.png`;
+        const url = `nw-crest-designer/images/foreground/small/${name}_small.png`;
         image.src = url;
         image.width = 72;
         image.height = 72;
@@ -559,7 +559,7 @@
 
     const smallBackgroundImageElements = backgroundImagePaths.map(name => {
         const image = document.createElement('img');
-        const url = `/images/background/small/${name}_small.png`;
+        const url = `nw-crest-designer/images/background/small/${name}_small.png`;
         image.src = url;
         image.width = 72;
         image.height = 72;
@@ -663,7 +663,7 @@
 
             ctxBackground.putImageData(imageData, 0, 0);
         };
-        image.src = `/images/background/large/${currentBackgroundImage}.png`;
+        image.src = `nw-crest-designer/images/background/large/${currentBackgroundImage}.png`;
     }
 
     function renderForeground() {
@@ -696,7 +696,7 @@
 
             ctxForeground.putImageData(imageData, 0, 0);
         };
-        image.src = `/images/foreground/large/${currentForegroundImage}.png`;
+        image.src = `nw-crest-designer/images/foreground/large/${currentForegroundImage}.png`;
     }
 
     function getImageTileForImage(which, image) {
